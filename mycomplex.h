@@ -1,13 +1,16 @@
+ //Имя подключаемого фвйла "mycomplex.h"
+ //Заголовочный файл "комплексное число"
 #ifndef _MY_COMPLEX_H_
 #define _MY_COMPLEX_H_
-#include <iostream>
 
 using namespace std;
-
+// Класс комплексного числа
 class Complex
 
 {
+    //действительная составляющая
    double Re;
+   // Мнимая составляющая
    double Im;
 
    public:
