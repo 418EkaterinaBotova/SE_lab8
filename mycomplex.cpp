@@ -1,21 +1,26 @@
+//Имя подключаемого фвйла "mycomplex.cpp"
+//Файл с описанием методов класса Complex
 #include <iostream>
 #include <cmath>
 #include "mycomplex.h"
 
 using namespace std;
-
+// Конструктор класс
+// Действительная составляющая
+// Мнимая состаяляющая
    Complex :: Complex (double aRe, double aIm)
    {
        Re = aRe;
        Im = aIm;
    }
-
+// Конструктор класса
+// Комплексное число
    Complex :: Complex (const Complex & aRval)
    {
        Re = aRval.Re;
        Im = aRval.Im;
    }
-
+// Деструктор класса
    Complex :: ~Complex()
    {
        Re = 0.0;
@@ -27,7 +32,8 @@ void Complex :: Set (double aRe, double aIm)
        Re = aRe;
        Im = aIm;
    }
-
+//Возвращает модуль комплексного числа
+// Модуль комплексного числа
    Complex :: operator double()
    {
        return abs();
